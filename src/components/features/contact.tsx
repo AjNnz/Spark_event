@@ -49,7 +49,7 @@ export const Contact = () => (
                 </div>
                 <div>
                   <p className="font-semibold text-gray-800">Address</p>
-                  <p className="text-gray-600">123 Gabi, Cordova, Cebu City, 6017</p>
+                  <p className="text-gray-600">Gabi, Cordova, Cebu City, 6017</p>
                 </div>
               </div>
             </div>
