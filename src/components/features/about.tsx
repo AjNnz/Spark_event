@@ -1,11 +1,13 @@
 import Image from 'next/image';
 import TeamMember1 from '@/assets/images/Aj.jpg';
 import TeamMember2 from '@/assets/images/Bae.webp';
+import TeamMember3 from '@/assets/images/iu.jpg'; 
 
 export const About = () => {
   const team = [
     { name: "Angelito L. Nunez Jr.", role: "Creative Director", image: TeamMember1 },
     { name: "Bhebie Jane C. Miras", role: "Event Strategist", image: TeamMember2 },
+    { name: "Shaymae Jane S. Sumagang", role: "Lead Designer", image: TeamMember3 },
   ];
 
   return (
@@ -30,7 +32,7 @@ export const About = () => {
         {/* Team Section (Directly underneath) */}
         <div className="mt-16">
           <p className="text-slate-700 text-lg italic tracking-tight font-gray mb-5">
-            Meet the amazing persons behind the magic.
+            Meet the amazing people behind the magic.
           </p>
 
           <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-12">
