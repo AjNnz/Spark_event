@@ -1,9 +1,18 @@
+"use client"; 
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import TeamMember1 from '@/assets/images/Aj.jpg';
 import TeamMember2 from '@/assets/images/Bae.webp';
 import TeamMember3 from '@/assets/images/iu.jpg'; 
 
 export const About = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  // This ensures the custom styles only trigger once the client is ready
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+  
   const team = [
     { name: "Angelito L. Nunez Jr.", role: "Creative Director", image: TeamMember1 },
     { name: "Bhebie Jane C. Miras", role: "Event Strategist", image: TeamMember2 },
